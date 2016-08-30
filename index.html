@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags must come first in the head -->
 
-		<title>template</title>
+		<title>Golden State Warrior eCommerce Site</title>
 		
 		<!-- Included jQuery -->
 		<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
@@ -21,20 +21,57 @@
 		<!-- Optional mobile plugin for smartphones -->
 		<script src="js/jquery.magnify-mobile.js"></script>
 
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	</head>
 	<body>
-		<div id="gsw">
+		<div class="container-fluid"></div>
+			<img src="img/gswBG.png">
+		<div class="container">
+			<h1 class="heading">Golden State Warrior Gallery</h1>
+			<div id="gsw">
+			</div>
 		</div>
-		
+		<div class="cd-cart-container empty">
+			<a href="#0" class="cd-cart-trigger">
+				Cart
+				<ul class="count"> <!-- cart items count -->
+					<li>0</li>
+					<li>0</li>
+				</ul> <!-- .count -->
+			</a>
+
+			<div class="cd-cart">
+				<div class="wrapper">
+					<header>
+						<h2>Cart</h2>
+						<span class="undo">Item removed. <a href="#0">Undo</a></span>
+					</header>
+					
+					<div class="body">
+						<ul>
+							<!-- products added to the cart will be inserted here using JavaScript -->
+						</ul>
+					</div>
+
+					<footer>
+						<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+					</footer>
+				</div>
+			</div> <!-- .cd-cart -->
+		</div> <!-- cd-cart-container -->
+
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<!-- Included jQuery -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<!-- Custom JavaScript -->
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/main-cart.js"></script>
 		
 	</body>
 </html>

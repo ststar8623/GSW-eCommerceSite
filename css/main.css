@@ -1,0 +1,30 @@
+body {
+	text-align: center;
+}
+
+.heading {
+	font-size: 40px;
+	padding: 20px;
+}
+
+.gsw {
+	text-align: center;
+	margin: 10px 0;
+	border: 1px solid #D9D9D9;
+	background-color: white;
+}
+
+.gsw h2 {
+	font-size: 28px;
+	padding: 20px;
+	height: 100px;
+}
+
+.gsw h4 {
+	font-size: 20px;
+	padding: 5px;
+}
+
+.cd-add-to-cart {
+	margin: 10px;
+}
