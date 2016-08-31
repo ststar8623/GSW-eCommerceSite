@@ -22,25 +22,25 @@ var kThomTee = new GSW ('Klay Thompson #11 Tee', 'X-Large', 'Black', 500, 20, 'i
 var greenUSA = new GSW ('Draymond Green Nike USA', 'All Size', 'Blue', 350, 35, 'img/green/green-usa.png', 'img/green/green-usa-2.png')
 var greenJersey = new GSW ('Draymond Green #23 Jersey', 'All Size', 'Blue', 350, 110, 'img/green/green-jersey.png', 'img/green/green-jersey-2.png')
 var greenTee = new GSW ('Draymond Green #23 Tee', 'All Size', 'Grey', 500, 28, 'img/green/green-tee.png', 'img/green/green-tee-2.png')
-var curryHead = new GSW ('Stephen Curry #30 FLATHLETE 5” FIGURINE', 'One Size', '', 'Limited', 20, 'img/head/curry-head.png', 'img/head/curry-head.png')
-var greenHead = new GSW ('Draymond Green #23 FLATHLETE 5” FIGURINE', 'One Size', '', 'Limited', 20, 'img/head/green-head.png', 'img/head/green-head.png')
-var kThomHead = new GSW ('Klay Thompson #11 FLATHLETE 5” FIGURINE', 'One Size', '', 'Limited', 20, 'img/head/kthom-head.png', 'img/head/kthom-head.png')
+var curryHead = new GSW ('Stephen Curry #30 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/curry-head.png', 'img/head/curry-head.png')
+var greenHead = new GSW ('Draymond Green #23 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/green-head.png', 'img/head/green-head.png')
+var kThomHead = new GSW ('Klay Thompson #11 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/kthom-head.png', 'img/head/kthom-head.png')
 
+stocksArray.push(curryHead)
 stocksArray.push(curryJacket)
 stocksArray.push(curryJersey)
 stocksArray.push(curryTee)
-stocksArray.push(kdJacket)
-stocksArray.push(kdJersey)
-stocksArray.push(kdTee)
+stocksArray.push(kThomHead)
 stocksArray.push(kThomWest)
 stocksArray.push(kThomJersey)
 stocksArray.push(kThomTee)
+stocksArray.push(greenHead)
 stocksArray.push(greenUSA)
 stocksArray.push(greenJersey)
 stocksArray.push(greenTee)
-stocksArray.push(curryHead)
-stocksArray.push(greenHead)
-stocksArray.push(kThomHead)
+stocksArray.push(kdJacket)
+stocksArray.push(kdJersey)
+stocksArray.push(kdTee)
 
 for( i = 0; i < stocksArray.length; i++ ) {
 	var gswName = document.createTextNode(stocksArray[i].name)
@@ -76,7 +76,7 @@ for( i = 0; i < stocksArray.length; i++ ) {
 	image.setAttribute('data-magnify-src', gswMagnifyImage)
 	image.className = 'zoom img-responsive'
 
-	newCol.className = 'col-sm-4'
+	newCol.className = 'col-sm-3'
 	newDiv.className = 'gsw stock' + i + ' thumbnamil'
 	newDiv.appendChild(nameH2)
 	newDiv.appendChild(image)
