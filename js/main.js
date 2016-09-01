@@ -25,6 +25,7 @@ var greenTee = new GSW ('Draymond Green #23 Tee', 'All Size', 'Grey', 500, 28, '
 var curryHead = new GSW ('Stephen Curry #30 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/curry-head.png', 'img/head/curry-head.png')
 var greenHead = new GSW ('Draymond Green #23 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/green-head.png', 'img/head/green-head.png')
 var kThomHead = new GSW ('Klay Thompson #11 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/kthom-head.png', 'img/head/kthom-head.png')
+var kdSet = new GSW ('Kevin Durant Silver Coin', '', '', 'Limited', 20, 'img/kd/kevin-durant-set.png', 'img/kd/kevin-durant-set-2.png')
 
 stocksArray.push(curryHead)
 stocksArray.push(curryJacket)
@@ -41,6 +42,7 @@ stocksArray.push(greenTee)
 stocksArray.push(kdJacket)
 stocksArray.push(kdJersey)
 stocksArray.push(kdTee)
+stocksArray.push(kdSet)
 
 for( i = 0; i < stocksArray.length; i++ ) {
 	var gswName = document.createTextNode(stocksArray[i].name)
@@ -94,5 +96,19 @@ $(document).ready(function(){
 	$('.zoom').magnify();
 });
 
+$(document).ready(function(){
+	$('.navbar-fixed-left').mouseenter(function(){
+		$(this).animate({
+			left: '0px'
+		})
+		$('.container').fadeTo('fast', 0.3);
+	})
+	$('.navbar-fixed-left').mouseleave(function(){
+		$(this).animate({
+			left: '-140px'
+		})
+		$('.container').fadeTo('fast', 1)
+	})
+})
 
 

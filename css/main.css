@@ -1,5 +1,4 @@
 body {
-	text-align: center;
 	background-image: url('../img/gswBG.jpg');
 	background-position: center;
 	background-attachment: fixed;
@@ -14,32 +13,59 @@ body {
 	color: #FCF942;
 	position: relative;
 	text-shadow: 10px 10px 10px black;
-	margin: 0;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.heading:hover {
-	-webkit-transition: all .5s;
- 	transition: all .5s;
- 	color: black;
- 	font-weight: 400;
-	text-shadow: 5px 5px 10px #FCF942;
-	background-image: url('../img/gswGroup.png');
-	height: auto;
-	background-position: center;
-	background-attachment: cover;
+/* nav */
+/* CSS used here will be applied after bootstrap.css */
+.navbar-fixed-left {
+ 	width: 160px;
+  	position: fixed;
+  	border-radius: 0;
+  	height: 100%;
+  	left: -140px;
+  	background-image: url('../img/navbar.jpg');
+  	background-position: center;
 }
 
+.navbar-fixed-left .navbar-nav > li {
+ 	float: none;  /* Cancel default li float: left */
+ 	width: 139px;
+ 	top: 100px;
+ 	font-size: 16px;
+ 	font-weight: 500;
+ }
+
+.navbar-brand > img {
+	display: inline-block;
+}
+
+a > span {
+	color: black;
+	font-size: 1.2em;
+}
+
+a > span:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* item container */
 .gsw {
 	text-align: center;
 	margin: 10px 0;
 	border: 1px solid #D9D9D9;
-	background-color: #DBDBD9;
+	background-color: #E8E8E8;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px yellow;
 }
 
 .gsw h2 {
-	font-size: 28px;
+	font-size: 24px;
 	padding: 20px;
-	height: 120px;
+	height: 100px;
 	font-family: 'Luckiest Guy', cursive;
 }
 
@@ -53,6 +79,7 @@ body {
 .zoom {
 	margin: 3px;
 	box-shadow: 5px 5px 10px black;
+	border-radius: 15px;
 }
 
 .cd-add-to-cart {
