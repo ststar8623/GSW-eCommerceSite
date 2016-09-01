@@ -33,16 +33,28 @@
 	</head>
 	<body>
 		<!--navigation-->
-		<div class="navbar navbar-inverse navbar-fixed-left">
-		  	<a class="navbar-brand" href="#"><img src="img/basket.png"></a>
-		  	<ul class="nav navbar-nav">
-		  		<li><a href="#home"><span>Home</span></a></li>
-		   		<li><a href="#"><span>Stephen Curry</span></a></li>
-				<li><a href="#"><span> Klay Thompson</span></a></li>
-		   		<li><a href="#"><span>Draymond Green</span></a></li>
-		   		<li><a href="#"><span>Kevin Durant</span></a></li>
-		  	</ul>
-		</div>
+		<div id="wrapper" class="toggled">
+			<div id="sidebar-wrapper">
+		  		<ul class="sidebar-nav">
+		  			<li class="sidebar-brand">
+		  				<img class="img-responsive" src="img/basket.png">
+		  			</li>
+			   		<li>
+			   			<a href="#">Stephen Curry</a>
+			   		</li>
+					<li>
+						<a href="#">Klay Thompson</a>
+					</li>
+			   		<li>
+			   			<a href="#">Draymond Green</a>
+			   		</li>
+			   		<li>
+			   			<a href="#">Kevin Durant</a>
+			   		</li>
+			  	</ul>
+			</div>
+		</div> <!-- wrapper -->
+		<button type="button" class="btn btn-default" id="menu-toggle">Menu</button>
 		<div class="container-fluid">
 			<h1 class="heading">Golden State Warrior Gallery</h1>
 		</div>

@@ -97,18 +97,24 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$('.navbar-fixed-left').mouseenter(function(){
-		$(this).animate({
-			left: '0px'
+	$('#menu-toggle').click(function(){
+		$('#wrapper').animate({
+			left: "0"
 		})
-		$('.container').fadeTo('fast', 0.3);
+		$('.container').animate({
+			opacity: '0.5'
+		})
 	})
-	$('.navbar-fixed-left').mouseleave(function(){
-		$(this).animate({
-			left: '-140px'
+	$('#wrapper').mouseleave(function(){
+		$('#wrapper').animate({
+			left: "-240px"
 		})
-		$('.container').fadeTo('fast', 1)
+		$('.container').animate({
+			opacity: '1'
+		})
 	})
 })
+
+
 
 
