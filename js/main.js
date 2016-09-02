@@ -9,6 +9,10 @@ function GSW (name, size, color, stock, price, image, magnifyImage) {
 }
 
 var stocksArray = []
+var curryArray = []
+var thompsonArray = []
+var greenArray = []
+var durantArray = []
 
 var curryJacket = new GSW ('Stephen Curry #30 Jacket', 'All Size', 'Blue', 'Sold Out', 500, 'img/curry/curry-jacket.png', 'img/curry/curry-jacket-2.png')
 var curryJersey = new GSW ('Stephen Curry #30 Jersey', 'Small', 'Blue', '15', 110, 'img/curry/curry-jersey.png', 'img/curry/curry-jersey-2.png')
@@ -27,6 +31,7 @@ var greenHead = new GSW ('Draymond Green #23 FLATHLETE 5”', 'One Size', '', 'L
 var kThomHead = new GSW ('Klay Thompson #11 FLATHLETE 5”', 'One Size', '', 'Limited', 20, 'img/head/kthom-head.png', 'img/head/kthom-head.png')
 var kdSet = new GSW ('Kevin Durant Silver Coin', '', '', 'Limited', 20, 'img/kd/kevin-durant-set.png', 'img/kd/kevin-durant-set-2.png')
 
+// all stock pushed //
 stocksArray.push(curryHead)
 stocksArray.push(curryJacket)
 stocksArray.push(curryJersey)
@@ -114,6 +119,36 @@ $(document).ready(function(){
 		})
 	})
 })
+
+// sorting function //
+$(document).ready(function(){
+	$("a[href='#curry']").click(function(){
+		$(".col-sm-3").slice( 0, 16 ).show();
+		$(".col-sm-3").slice( 4 ).hide();
+	})
+	$("a[href='#thompson']").click(function(){
+		$(".col-sm-3").slice( 0, 16 ).show();
+		$(".col-sm-3").slice( 0, 4 ).hide();
+		$(".col-sm-3").slice( 8 ).hide();
+	})
+	$("a[href='#green']").click(function(){
+		$(".col-sm-3").slice( 0, 16 ).show();
+		$(".col-sm-3").slice( 0, 8 ).hide();
+		$(".col-sm-3").slice( 12 ).hide();
+	})
+	$("a[href='#durant']").click(function(){
+		$(".col-sm-3").slice( 0, 16 ).show();
+		$(".col-sm-3").slice( 0, 12 ).hide();
+	})
+	$("a[href='#all']").click(function(){
+		$(".col-sm-3").slice( 0, 16 ).show();
+	})
+})
+
+
+
+
+
 
 
 

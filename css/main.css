@@ -72,7 +72,7 @@ body {
 	color: #E6A610;
 	border-color: #364969;
 	font-size: 1.1em;
-	position: fixed;
+	position: absolute;
 }
 
 .btn-default:hover {
