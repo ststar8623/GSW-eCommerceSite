@@ -97,10 +97,12 @@ for( i = 0; i < stocksArray.length; i++ ) {
 	document.getElementById('gsw').appendChild(newCol)
 }
 
+// magnify function //
 $(document).ready(function(){
 	$('.zoom').magnify();
 });
 
+// opacity change //
 $(document).ready(function(){
 	$('#menu-toggle').click(function(){
 		$('#wrapper').animate({
@@ -123,25 +125,23 @@ $(document).ready(function(){
 // sorting function //
 $(document).ready(function(){
 	$("a[href='#curry']").click(function(){
-		$(".col-sm-3").slice( 0, 16 ).show();
-		$(".col-sm-3").slice( 4 ).hide();
+		$(".col-sm-3").hide();
+		$(".col-sm-3:contains(Curry)").show();
 	})
 	$("a[href='#thompson']").click(function(){
-		$(".col-sm-3").slice( 0, 16 ).show();
-		$(".col-sm-3").slice( 0, 4 ).hide();
-		$(".col-sm-3").slice( 8 ).hide();
+		$(".col-sm-3").hide();
+		$(".col-sm-3:contains(Thompson)").show();
 	})
 	$("a[href='#green']").click(function(){
-		$(".col-sm-3").slice( 0, 16 ).show();
-		$(".col-sm-3").slice( 0, 8 ).hide();
-		$(".col-sm-3").slice( 12 ).hide();
+		$(".col-sm-3").hide();
+		$(".col-sm-3:contains(Green)").show();
 	})
 	$("a[href='#durant']").click(function(){
-		$(".col-sm-3").slice( 0, 16 ).show();
-		$(".col-sm-3").slice( 0, 12 ).hide();
+		$(".col-sm-3").hide();
+		$(".col-sm-3:contains(Durant)").show();
 	})
 	$("a[href='#all']").click(function(){
-		$(".col-sm-3").slice( 0, 16 ).show();
+		$(".col-sm-3:contains(Color)").show();
 	})
 })
 
